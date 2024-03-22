@@ -16,5 +16,5 @@ async def command_start_process(message: Message):
 
 
 @router.message(Command(commands='help'))
-async def  command_help_process(message: Message):
+async def command_help_process(message: Message):
     await message.answer(LEXICON[message.text])
